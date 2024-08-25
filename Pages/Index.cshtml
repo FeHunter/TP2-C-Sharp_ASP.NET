@@ -1,10 +1,14 @@
 ﻿@page
+@using TP2_ASP.NET.Pages.Shared
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "TP2";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome TP2_ASP.NET</h1>
+    <div style="padding: 1%;">
+        <p>Renderizar Componente:</p>
+        <component type="typeof(Shared.HelloComponent)" render-mode="Static" />
+    </div>
 </div>

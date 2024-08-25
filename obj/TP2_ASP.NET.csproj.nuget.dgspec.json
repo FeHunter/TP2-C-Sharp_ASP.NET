@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2 - ASP.NET\\TP2_ASP.NET\\TP2_ASP.NET.csproj": {}
+    "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\TP2_ASP.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2 - ASP.NET\\TP2_ASP.NET\\TP2_ASP.NET.csproj": {
+    "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\TP2_ASP.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2 - ASP.NET\\TP2_ASP.NET\\TP2_ASP.NET.csproj",
+        "projectUniqueName": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\TP2_ASP.NET.csproj",
         "projectName": "TP2_ASP.NET",
-        "projectPath": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2 - ASP.NET\\TP2_ASP.NET\\TP2_ASP.NET.csproj",
+        "projectPath": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\TP2_ASP.NET.csproj",
         "packagesPath": "C:\\Users\\hunte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2 - ASP.NET\\TP2_ASP.NET\\obj\\",
+        "outputPath": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hunte\\AppData\\Roaming\\NuGet\\NuGet.Config"
