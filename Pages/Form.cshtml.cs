@@ -16,8 +16,8 @@ namespace MyApp.Namespace
         }
 
         [BindProperty]
-        [Required(ErrorMessage = "User name is required")]
-        [StringLength(100, ErrorMessage = "User name cannot exceed 100 characters")]
+        [Required(ErrorMessage = "Nome é obrigatório")]
+        [StringLength(100, ErrorMessage = "Nome muito grande")]
         public string UserName { get; set; }
 
         public IActionResult OnPost()
