@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9JsZR3t4k9P9fDr/7rf6f5LQ4bZjsWyZcm5ktt/cXw4=",
+  "Hash": "MsLxoEhHFjQolP0MWi0tywQVdugRsfo4WjytuBvzCa4=",
   "Source": "TP2_ASP.NET",
   "BasePath": "_content/TP2_ASP.NET",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\wwwroot\\Data\\UserNames.txt",
+      "SourceId": "TP2_ASP.NET",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\wwwroot\\",
+      "BasePath": "_content/TP2_ASP.NET",
+      "RelativePath": "Data/UserNames.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Data\\UserNames.txt"
     },
     {
       "Identity": "C:\\Users\\hunte\\Documents\\Programmer\\Estudos\\Faculdade\\Back-End\\C#\\TPs\\TP2_ASP.NET\\wwwroot\\favicon.ico",

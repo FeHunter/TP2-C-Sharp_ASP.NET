@@ -27,18 +27,38 @@ namespace MyApp.Namespace
                 return Page(); // Retorna à página se a validação falhar.
             }
 
-            // Se o ModelState for válido, podemos salvar o nome de usuário no arquivo.
+            // Caminho do arquivo
             string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "Data", "UserNames.txt");
 
-            // Cria o diretório se não existir
-            Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+            // Verifica o caminho do arquivo
+            System.Diagnostics.Debug.WriteLine($"File path: {filePath}");
 
-            using (StreamWriter writer = new StreamWriter(filePath, append: true))
+            // Cria o diretório se não existir
+            string directoryPath = Path.GetDirectoryName(filePath);
+            if (!Directory.Exists(directoryPath))
             {
-                writer.WriteLine(UserName);
+                Directory.CreateDirectory(directoryPath);
+                System.Diagnostics.Debug.WriteLine($"Directory created: {directoryPath}");
             }
 
-            // Depois de salvar
+            // Salva o nome de usuário no arquivo
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath, append: true))
+                {
+                    writer.WriteLine(UserName);
+                    System.Diagnostics.Debug.WriteLine($"User name saved: {UserName}");
+                }
+            }
+            catch (IOException ex)
+            {
+                // Loga o erro se não puder escrever no arquivo
+                System.Diagnostics.Debug.WriteLine($"Error writing to file: {ex.Message}");
+                ModelState.AddModelError("", "Error saving data. Please try again.");
+                return Page();
+            }
+
+            // Depois de salvar, redireciona para a página de itens
             return RedirectToPage("/Itens");
         }
     }
