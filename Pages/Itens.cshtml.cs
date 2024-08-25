@@ -1,15 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MyApp.Namespace
 {
     public class ItensModel : PageModel
     {
-        public List<string> Items { get; private set; }
+        public List<string> Items { get; private set; } = new List<string>();
 
         public void OnGet()
         {
-            Items = new List<string> { "Item 1", "Item 2", "Item 3" };
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "UserNames.txt");
+
+            if (System.IO.File.Exists(filePath))
+            {
+                Items = System.IO.File.ReadAllLines(filePath).ToList();
+            }
+            else
+            {
+                Items.Add("Lista vazia.");
+            }
         }
     }
 }
